@@ -1,11 +1,12 @@
- /* body > header {
+  /* body > header {
     position: fixed;
     top: 0;
-  }
+ } */
+  
   body > footer {
     position: fixed;
     bottom: 0;
-  } */
+  } 
 *{
     padding:0;
     margin:0;
@@ -26,6 +27,7 @@ nav{
     padding-top: 45px;
     padding-left: 8%;
     padding-top: 8%;
+    position: fixed;
 }
 .logo{
     color: white;
@@ -33,22 +35,30 @@ nav{
     letter-spacing: 1px;
     cursor: pointer;
 }
+/* ul{
+    display: fixed;
+} */
 nav ul li{
     list-style-type: none;
     display: inline-block;
     padding: 10px 25px;
+    /* display: fixed; */
 
 }
 nav ul li a{
     color: white;
     text-decoration: none;
     text-transform: capitalize;
+    /* display: fixed; */
 }
 nav ul li a:hover{
     color: red;
     transition:4s;
 
 }
+/* #fixed{
+    position: fixed;
+} */
 .btn{
     background-color: red;
     color: white;
@@ -63,6 +73,7 @@ nav ul li a:hover{
     top:50%;
     left:8%;
     transform:translatey(-50%);
+    height: 50vh;
 }
 h1{
     color:blue; 
@@ -80,6 +91,7 @@ h2{
 #belindanabudde-image{
     height: auto;
     width:430px;
+    /* padding-top:300px ; */
 }
 .about-text{
     width:550px;
@@ -115,7 +127,8 @@ h2{
 .projects{
     background: #101010;
     width:100%;
-    padding: 100px 0px;
+    padding-bottom: 50px;
+    /* padding: 100px 0px; */
 }
 .title-project h2{
     color: white;
@@ -175,12 +188,13 @@ h2{
 footer{
     position: relative;
     width:100%;
-    height: 200px;
+    height: 10vh;
     background:red;
     display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    /* padding-top: 50px; */
 }
 #facebook-image{
     width:25px;
@@ -201,6 +215,5 @@ footer{
 #address-image{
     border-radius:50% ;
     width:25px;
-    height:25px;
-
+    height:25px
 }
