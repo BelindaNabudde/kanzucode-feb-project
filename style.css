@@ -12,7 +12,7 @@
     height:100vh;
     width:100%;
     background-image: url(./beli-image.jpg);
-    background-size:contain;
+    background-size:cover;
     background-position: center;
 }
 nav{
@@ -209,6 +209,16 @@ footer{
     align-items: center;
     justify-content: center;
 }
+.social-media{
+    display: flex;
+}
+.social-media a{
+    width:45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 #facebook-image{
     width:25px;
     height:25px;
@@ -245,7 +255,7 @@ footer{
     height:100vh;
     width:800px;
     background-image: url(./beli-image.jpg);
-    background-size:contain;
+    background-size:cover;
     background-position: center;
  }
  
