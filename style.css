@@ -230,93 +230,243 @@ footer{
     width:25px;
     height:25px
 }
-/* @media(max-width:800px) {
-    .hero{
-        height:100vh;
-        width:100%;
-        background-image: url(./beli-image.jpg);
-        background-size:cover;
-        background-position: center;
+@media(max-width:800px) { 
+    body > footer {
+    position: fixed;
+    bottom: 0;
+  } 
+*{
+    padding:0;
+    margin:0;
+    font-family: 'Josefin Sans',sans-serif;
+    box-sizing:border-box;
 }
-nav{
+.hero{
+    height:100vh;
+    width:800px;
+    background-image: url(./beli-image.jpg);
+    background-size:contain;
+    background-position: center;
+ }
+ 
+nav{ 
+    width: 800px;
+    background-color: rgb(25, 27, 27);
+    position: fixed;
     display: flex;
     align-items: center;
-    justify-content: space-between; 
-    padding-top: 85px;
-    padding-left: 20%;
-    padding-top: 20%;
-    font-size: larger;
-    position: fixed;
+    justify-content: space-between;
+    padding-top: 25px; 
+    font-size: 2rem;   
 }
-.logo{
-    color: white;
-    font-size: 35px;
-    letter-spacing: 1px;
-    cursor: pointer;
-}
-nav ul li{
-    list-style-type: none;
+nav ul li{   
     display: inline-block;
-    padding: 10px 25px; 
 }
 nav ul li a{
     color: white;
     text-decoration: none;
     text-transform: capitalize;
-    font-size: larger;
-} 
+}
+nav ul li a:hover{
+    color: red;
+    transition:4s;
+ }
+
+.btn{
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding:10px 25px ;
+    border-radius: 30px;
+}
 .content{
+    width: 800px;
     position:absolute;
     top:50%;
     left:8%;
     transform:translatey(-50%);
     height: 50vh;
+    
+}
+#heading1{
+    color: white;
 }
 h1{
     color:blue; 
-    padding-top: 300px;
-    font-size: 50px;  
+    margin: 20px 0 20px;
+    font-size: 75px;  
 }
 h2{
-    display: none;
-}
-
+    color:white; 
+    font-size: 50px;
+ }
 .about{
-    width:80%;
-    /* padding: 100px opx; */
-    /* background-color: #191919;
+    width: 800px;
+    background-color: #191919;
+    padding: 20px 0px;
 }
-#belindanabudde-image{
-    /* height: auto; */
-    /* display: block; */
-    /* width:475px;
-    height: 300px;
+#belindanabudde-image{ 
+    border-radius: 0%;
+    height: auto;
+    position: absolute;
+    width:430px;
+    padding-top: 0px;
+    padding-bottom: 1000px;
+    font-size: 75px;
 }
 .about-text{
-    width:550px;
-    padding-left: 25px;
-    font-size: larger;
-   
-}
+    width:550px; 
+} 
 .main{
-    width:1130px;
-    max-width:95%;
+    width:800px;
+    max-width:800px;
     margin:0 auto;
-    align-items:center;
-    justify-content:space-around;
+    position: relative;
+    display:flex ;
 }
-.about-text h1{
+ .about-text h2{
+    padding-top: 900px; 
+    text-align: center;
     color:white;
-    font-size: 75px;
+    font-size: 40px;
     text-transform: capitalize;
-    margin-bottom:20px;
-}
+} 
 .about-text h5{
     color:white;
+    padding-top: 25px;
     letter-spacing:2px;
-    font-size: 22px;
+    font-size: 40px;
     margin-bottom:25px;
-    text-transform:capitalize
+    text-transform:capitalize; 
 }
+#para-1{
+    color:white;
+    font-size: 40px;
+    margin-bottom:45px;
+    font-family: 'Josefin Sans',sans-serif;
+} 
+.projects{
+    background: #101010;
+    width: 800px;;
+}
+.title-project h2{
+    color: white;
+    font-size: 75px;
+    width:800px;
+    text-align:none;
+}
+.box{
+    padding-left:50px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    min-height: 800px;
+}
+.card{
+    height:500px;
+    width:600px;
+    padding:0px 35px;
+    background-color: #191919;
+    border-radius: 20px;
+    margin:15px;
+    text-align: center;
+}
+.card img{
+    font-size:75px ;
+    display:block;
+    border-radius: 40px;
+    text-align: center;
+    margin:25px 0px;
+    color:aquamarine;
+    padding-left: 200px;
+}
+#portfolio{
+    font-size:5px ;
+    width:400px;
+    height:150px;
+    
+}
+#surveyform{
+    font-size:5px ;
+    width:400px;
+    height:150px;
+}
+#hashnode{
+    font-size:5px ;
+    width:400px;
+    height:150px;
+}
+.box p{
+    font-size: 40px;
+    color: bisque;
+    font-family: 'Josefin Sans',sans-serif;
+}
+.box h3{
+    color: blue;
+    font-size: 35px;
+}
+.feed-back{
+    width:800px;
+    height:500px;
+    background:#191919;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.feed-back h2{
+    color:white;
+    font-size: 75px;
+    font-weight:bold;
+    margin-bottom:25px;
+}
+.feed-back textarea{
+    width: 70%;
+    height:100px;
+    border-radius: 10px;
+}
+.feed-back .button1{
+    background-color: red;
+    color:white;
+    text-decoration: none;
+    border:2px solid transparent;
+    font-weight:bold;
+    padding:13px 30px;
+    border-radius: 30px;
+    margin-top: 30px;
+    margin-bottom: 200px;    
+}
+footer{
+    font-size: 23px;
+    margin-top: 60px;
+    position: relative;
+    width:100%;
+    height: 30vh;
+    background:red;
+    align-items: center;
+    justify-content: center;
+}
+#facebook-image{
+    width:80px;
+    height:80px;
+    border-radius: 50%;
+}
+#github-image{
+    border-radius:50% ;
+    width:80px;
+    height:80px;
+}
+#email-image{
+    border-radius:50% ;
+    width:80px;
+    height:80px;
+}
+#address-image{
+    border-radius:50% ;
+    width:80px;
+    height:80px
+ }  
 
-}  */  
+}
